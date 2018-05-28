@@ -1,0 +1,119 @@
+:root{
+	--rosa: #ff008d;
+	--azulC: #0090d6;
+	--azulO: #292c97;
+	--colorText: #838383;
+}
+body{
+	font-family: 'Lato', system-ui;
+	margin: 0;
+	padding: 0;
+}
+.Portada{
+	padding-bottom: 5em;
+	position: relative;
+	& .videoContenedor{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		& video{
+			min-width: 100%;
+			min-height: 100%;
+
+		}
+	}
+	& .header{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding-top: 1em;
+		& .logo{
+			width: 20%;
+			& .img{
+				width: 100%;
+			}
+		}
+		& .menu{
+			display: flex;
+			list-style: none;
+			& a{
+				padding: 2em;
+				text-decoration: none;
+				font-size: 1.1rem;
+				color: white;
+			}
+		}
+	}
+	& .copy{
+		background: rgba(0,0,0,.8);
+		width: 70%;
+		border-radius: 5px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 2em 0 4em 0;
+		margin: 4em auto;
+		& .title{
+			color: var(--rosa);
+			font-size: 3rem;
+		}
+		& .subtitle{
+			color: var(--azulO);
+			font-size: 2rem;
+			margin-bottom: 2em;
+			font-weight: normal;
+		}
+		& .btn{
+			background: var(--azulO);
+			color: white;
+			text-decoration: none;
+			padding: 1em 2em;
+			border-radius: 15px;
+			font-size: 1.1rem;
+		}
+	}
+}
+.Informacion{
+	background: var(--azulC);
+	padding: 20em 10em 0 0 10em;
+	text-align: center;
+	width: 50%;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+	position: absolute;
+	top: 35%;
+	height: 140%;
+	box-sizing: border-box;
+	& .descripcion{
+		color: white;
+		font-size: 1.2rem;
+	}
+}
+.Mision{
+	position: absolute;
+	background: white;
+	right: 0;
+	width: 80%;
+	clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+	height: 117%;
+	top: 30%;
+	box-sizing: border-box;
+	padding-top: 17em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 30em;
+	color: var(--colorText);
+	& .descripcion{
+		margin-top: 0;
+		width: 50%;
+	}
+	& .valores{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: justify;
+	}
+}
