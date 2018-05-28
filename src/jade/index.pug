@@ -4,6 +4,7 @@ head
 	meta(charset="UTF-8")
 	title Servidigital CTP | Soluciones gráficas en Barranquilla
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="css/fontawesome-all.min.css")
 	link(rel="stylesheet", href="css/estilos.css")
 body
 	section.Portada
@@ -20,5 +21,22 @@ body
 		.copy
 			h1.title Ponemos color a tus ideas
 			h2.subtitle Contamos con un amplio portafolio de servicios
-			a.btn(href="#")	Contactanos
-			
+			a.btn(href="#") contactanos
+
+	section.Informacion
+		img(src="img/sketchbook.png", alt="sketchbook").img
+		p.descripcion En SERVIDIGITALES disponemos de instalaciones propias con equipos de última tecnología en procesos de impresión offset, preprensa CTP, impresión digital y gran formato que nos permite brindar soluciones gráficas de comunicación las cuales su negocio o empresa requieren.
+	section.Mision
+		h3.title Misión
+		p.descripcion Brindamos servicios de pre-prensa digital e impresión gráfica a nuestros clientes para satisfacer sus necesidades con calidad, servicio y cumplimineto. 
+	
+		h3.title Visión
+		p.descripcion Para el año 2018 consolidarnos con nuestros clientes como un proveedor confiable en productos de pre-prensa digital e impresión gráfica por calidad, servicio y entrega oportuna.
+	
+		h3.title Valores
+		ul.valores
+			li!= "<span class='fas fa-check'></span> Excelencia"
+			li!= "<span class='fas fa-check'></span> Responsabilidad"
+			li!= "<span class='fas fa-check'></span> Compromiso"
+			li!= "<span class='fas fa-check'></span> Creatividad "
+			li!= "<span class='fas fa-check'></span> Servicio"
