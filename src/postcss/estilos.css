@@ -185,3 +185,52 @@ body{
 		background: #f3f3f3;
 	}
 }
+.Contacto{
+	display: flex;
+	justify-content: center;
+	& .contenedor{
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		text-align: center;
+		justify-items: center;
+		grid-gap: 50px;
+		& .item{
+			width: 100%;
+		}
+		& .cuadrado{
+			background: var(--rosa);
+			width: 90px;
+			height: 90px;
+			color: white;
+			font-size: 2rem;
+			line-height: 2.5em;
+			transform: rotate(45deg);
+			margin-left: 37%;
+			& span{
+				transform: rotate(-45deg);
+			}
+		}
+		& .informacion{
+			border: 1px solid var(--colorText);
+			margin-top: -45px;
+			width: 100%;
+			padding: 4em 0;
+			color: var(--colorText);
+			border-bottom: none;
+			& .title{
+				text-transform: uppercase;
+			}
+		}
+		& .btn{
+			border: 1px solid var(--rosa);
+			width: 100%;
+			display: block;
+			padding: 1em 0;
+			color: var(--rosa);
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+		}
+	}
+}
