@@ -8,6 +8,8 @@ head
 	link(rel="stylesheet", href="css/estilos.css")
 body
 	section.Portada
+		.videoContenedor
+			video.video(src="img/pelicula.mp4" autoplay loop)
 		header.header
 			figure.logo
 				img.img(src="img/logo.png", alt="logo")
@@ -22,48 +24,53 @@ body
 			h1.title Ponemos color a tus ideas
 			h2.subtitle Contamos con un amplio portafolio de servicios
 			a.btn(href="#") contactanos
+		section.Informacion
+			img(src="img/sketchbook.png", alt="sketchbook").img
+			p.descripcion En SERVIDIGITALES disponemos de instalaciones propias con equipos de última tecnología en procesos de impresión offset, preprensa CTP, impresión digital y gran formato que nos permite brindar soluciones gráficas de comunicación las cuales su negocio o empresa requieren.
+		section.Mision
+			h3.title Misión
+			p.descripcion Brindamos servicios de pre-prensa digital e impresión gráfica a nuestros clientes para satisfacer sus necesidades con calidad, servicio y cumplimineto. 
+		
+			h3.title Visión
+			p.descripcion Para el año 2018 consolidarnos con nuestros clientes como un proveedor confiable en productos de pre-prensa digital e impresión gráfica por calidad, servicio y entrega oportuna.
+	
+			h3.title Valores
+			ul.valores
+				li!= "<span class='fas fa-check'></span> Excelencia"
+				li!= "<span class='fas fa-check'></span> Responsabilidad"
+				li!= "<span class='fas fa-check'></span> Compromiso"
+				li!= "<span class='fas fa-check'></span> Creatividad "
+				li!= "<span class='fas fa-check'></span> Servicio"
 
-	section.Informacion
-		img(src="img/sketchbook.png", alt="sketchbook").img
-		p.descripcion En SERVIDIGITALES disponemos de instalaciones propias con equipos de última tecnología en procesos de impresión offset, preprensa CTP, impresión digital y gran formato que nos permite brindar soluciones gráficas de comunicación las cuales su negocio o empresa requieren.
-	section.Mision
-		h3.title Misión
-		p.descripcion Brindamos servicios de pre-prensa digital e impresión gráfica a nuestros clientes para satisfacer sus necesidades con calidad, servicio y cumplimineto. 
-	
-		h3.title Visión
-		p.descripcion Para el año 2018 consolidarnos con nuestros clientes como un proveedor confiable en productos de pre-prensa digital e impresión gráfica por calidad, servicio y entrega oportuna.
-	
-		h3.title Valores
-		ul.valores
-			li!= "<span class='fas fa-check'></span> Excelencia"
-			li!= "<span class='fas fa-check'></span> Responsabilidad"
-			li!= "<span class='fas fa-check'></span> Compromiso"
-			li!= "<span class='fas fa-check'></span> Creatividad "
-			li!= "<span class='fas fa-check'></span> Servicio"
 	section.Servicios
-		h2.title Servicios
+		.overlay
+			h2.title Servicios
 	section.Productos
 		.item
-			.imagen
-				img(src="producto-01.jpg", alt="producto-01").img
-			.informacion
-				h3.title Servicios de souvenir
-				p.descripcion ¿Que mensaje le escribirías a esa persona especia? Regala amor a quien amor se merece.
-				a.btn(href="#") Ver más
+			.contenedor
+				.imagen
+					img(src="img/producto-01.jpg", alt="producto-01").img
+				.informacion
+					h3.title Servicios de souvenir
+					p.descripcion ¿Que mensaje le escribirías a esa persona especia? Regala amor a quien amor se merece.
+					a.btn(href="#") Ver más
 		.item
-			.imagen
-				img(src="producto-02.jpg", alt="producto-02").img
-			.informacion
-				h3.title Mejoras a tu entorno
-				p.descripcion En Servidigital convertimos tus espacios en verdaderas Obras de arte!! Impresión Digital en Lienzo, y decora tus espacios con el mejor estilo. Trae tu Imagen favorita y nosotros la convertimos en un espectacular cuadro para la pared de tu sala, habitación, oficina, o lo que gustes!!
-				a.btn(href="#") Ver más
+			.contenedor
+			
+				.informacion
+					h3.title Mejoras a tu entorno
+					p.descripcion En Servidigital convertimos tus espacios en verdaderas Obras de arte!! Impresión Digital en Lienzo, y decora tus espacios con el mejor estilo. Trae tu Imagen favorita y nosotros la convertimos en un espectacular cuadro para la pared de tu sala, habitación, oficina, o lo que gustes!!
+					a.btn(href="#") Ver más
+				.imagen
+					img(src="img/producto-02.jpg", alt="producto-02").img
 		.item
-			.imagen
-				img(src="producto-03.jpg", alt="producto-03").img
-			.informacion
-				h3.title Mejoras a tu entorno
-				p.descripcion En Servidigital convertimos tus espacios en verdaderas Obras de arte!! Impresión Digital en Lienzo, y decora tus espacios con el mejor estilo. Trae tu Imagen favorita y nosotros la convertimos en un espectacular cuadro para la pared de tu sala, habitación, oficina, o lo que gustes!!
-				a.btn(href="#") Ver más
+			.contenedor
+				.imagen
+					img(src="img/producto-03.jpg", alt="producto-03").img
+				.informacion
+					h3.title Mejoras a tu entorno
+					p.descripcion En Servidigital convertimos tus espacios en verdaderas Obras de arte!! Impresión Digital en Lienzo, y decora tus espacios con el mejor estilo. Trae tu Imagen favorita y nosotros la convertimos en un espectacular cuadro para la pared de tu sala, habitación, oficina, o lo que gustes!!
+					a.btn(href="#") Ver más
 	section.Contacto
 		.contenedor
 			.item
@@ -117,6 +124,6 @@ body
 					li
 						a(href="#")
 							span.fab.fa-twitter-square
-	.copyright
-		h4.derechos SERVIDIGITAL 2018 - Todos los derechos reservados
-		p.desarrolladores!= "Diseño y Desarrollo por <a href=''>Gustavo Suáres</a> y <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+		.copyright
+			h4.derechos SERVIDIGITAL 2018 - Todos los derechos reservados
+			p.desarrolladores!= "Diseño y Desarrollo por <a href=''>Gustavo Suáres</a> y <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
