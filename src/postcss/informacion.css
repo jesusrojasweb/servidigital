@@ -1,0 +1,15 @@
+.Informacion{
+	background: color(var(--azulC) a(90%));
+	padding: 20em 10em 0 0 10em;
+	text-align: center;
+	width: 50%;
+	clip-path: polygon(0 0, 100% 50%, 0 100%);
+	position: absolute;
+	top: 35%;
+	height: 140%;
+	box-sizing: border-box;
+	& .descripcion{
+		color: white;
+		font-size: 1.2rem;
+	}
+}

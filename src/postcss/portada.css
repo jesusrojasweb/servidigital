@@ -1,0 +1,66 @@
+.Portada{
+	padding-bottom: 5em;
+	position: relative;
+	& .videoContenedor{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: -1;
+		& video{
+			min-width: 100%;
+			min-height: 100%;
+
+		}
+	}
+	& .header{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding-top: 1em;
+		& .logo{
+			width: 20%;
+			& .img{
+				width: 100%;
+			}
+		}
+		& .menu{
+			display: flex;
+			list-style: none;
+			& a{
+				padding: 2em;
+				text-decoration: none;
+				font-size: 1.1rem;
+				color: white;
+			}
+		}
+	}
+	& .copy{
+		background: rgba(0,0,0,.8);
+		width: 70%;
+		border-radius: 5px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 2em 0 4em 0;
+		margin: 4em auto;
+		& .title{
+			color: var(--rosa);
+			font-size: 3rem;
+		}
+		& .subtitle{
+			color: var(--azulO);
+			font-size: 2rem;
+			margin-bottom: 2em;
+			font-weight: normal;
+		}
+		& .btn{
+			background: var(--azulO);
+			color: white;
+			text-decoration: none;
+			padding: 1em 2em;
+			border-radius: 15px;
+			font-size: 1.1rem;
+		}
+	}
+}
