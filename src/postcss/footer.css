@@ -1,0 +1,82 @@
+.Footer{
+	& .contenedor{
+		background: var(--azulO);
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: center;
+		padding: 3em 0;
+		color: white;
+		& .item{
+			& .title{
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				border-top: 2px solid var(--azulC);
+				padding-top: .2em;
+			}
+			& .menu{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				& li{
+					padding-bottom: .5em;
+				}
+			}
+			& .social{
+				display: flex;
+				justify-content: space-between;
+				& a{
+					color: white;
+					font-size: 2rem;
+					transition: .3s;
+				}
+				& a:hover{
+					color: var(--azulC);
+				}
+			}
+		}
+		& .item:nth-of-type(3){
+			display: flex;
+			flex-direction: column;
+			margin-top: 1.5em;
+			& a{
+				border-top: 2px solid var(--azulC);
+				font-size: 1.5rem;
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding: .5em 0;
+				display: block;
+				width: 100%;
+				transition: .3s;
+			}
+			& a:hover{
+				color: var(--azulC);
+			}
+			& a:nth-of-type(3){
+				border-bottom: 2px solid var(--azulC);
+			}
+		}
+	}
+	& .copyright{
+		background: black;
+		padding: 3em 0;
+		text-align: center;
+		color: white;
+		& .derechos{
+			margin: 0;
+			font-size: 2rem;
+			font-weight: normal;
+		}
+		& .desarrolladores{
+			& a{
+				text-decoration: none;
+				color: var(--azulC);
+				transition: .3s;
+			}
+			& a:hover{
+				color: white;
+			}
+
+		}
+	}
+}
